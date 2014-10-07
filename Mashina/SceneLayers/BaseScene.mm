@@ -14,11 +14,10 @@
 - (id)init {
     if ((self = [super init])) {
         self.isTouchEnabled = YES;
-        // Create a world
-        b2Vec2 gravity = b2Vec2(0.0f, -10.0f);
-        _world = new b2World(gravity);
-
         touchJointList = [[NSMutableArray alloc] init];
+
+        b2Vec2 gravity = b2Vec2(0.0f, -WORLDGRAVITY);
+        _world = new b2World(gravity);
 
         CGSize winSize = [CCDirector sharedDirector].winSize;
         [self drawScreenBodyWithSize:winSize];
@@ -59,7 +58,6 @@
     groundBox.Set(b2Vec2((float32) (winSize.width/PTM_RATIO), (float32) (winSize.height/PTM_RATIO)),
             b2Vec2((float32) (winSize.width/PTM_RATIO), 0));
     _groundBody->CreateFixture(&groundBoxDef);
-
 }
 
 #pragma mark -
@@ -67,15 +65,14 @@
 
 - (void)enableDebugMode {
     m_debugDraw = new GLESDebugDraw( PTM_RATIO );
-    _world->SetDebugDraw(m_debugDraw);
-
     uint32 flags = 0;
     flags += b2Draw::e_shapeBit;
-//    flags += b2Draw::e_jointBit;
+    flags += b2Draw::e_jointBit;
 //    flags += b2Draw::e_aabbBit;
 //    flags += b2Draw::e_pairBit;
-//    flags += b2Draw::e_centerOfMassBit;
+    flags += b2Draw::e_centerOfMassBit;
     m_debugDraw->SetFlags(flags);
+    _world->SetDebugDraw(m_debugDraw);
 }
 
 - (void) draw {
@@ -89,6 +86,14 @@
     kmGLPushMatrix();
     _world->DrawDebugData();
     kmGLPopMatrix();
+}
+
+#pragma mark - accelerometer
+
+- (void)accelerometer:(UIAccelerometer *)_accelerometer didAccelerate:(UIAcceleration *)_acceleration
+{
+    b2Vec2 gravity(_acceleration.y * -WORLDGRAVITY, _acceleration.x * WORLDGRAVITY);
+    _world->SetGravity(gravity);
 }
 
 #pragma mark -

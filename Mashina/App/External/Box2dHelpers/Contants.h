@@ -3,6 +3,7 @@
 //
 
 
+#define WORLDGRAVITY 10.0f
 #define PTM_RATIO 32.0
 
 /** Convert the given position into the box2d world. */
