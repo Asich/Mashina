@@ -7,7 +7,6 @@
 //
 
 #import "cocos2d.h"
-
 #import "AppDelegate.h"
 #import "IntroLayer.h"
 
@@ -76,10 +75,10 @@
 	[CCTexture2D PVRImagesHavePremultipliedAlpha:YES];
 	
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
-	[director_ pushScene: [IntroLayer scene]]; 
-	
-	
-	// Create a Navigation Controller with the Director
+	[director_ pushScene: [IntroLayer scene]];
+
+
+    // Create a Navigation Controller with the Director
 	navController_ = [[UINavigationController alloc] initWithRootViewController:director_];
 	navController_.navigationBarHidden = YES;
 	

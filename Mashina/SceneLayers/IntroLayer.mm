@@ -33,7 +33,7 @@
 	return scene;
 }
 
-// 
+// This method is Executes
 -(void) onEnter
 {
 	[super onEnter];
@@ -58,8 +58,13 @@
 	[self scheduleOnce:@selector(makeTransition:) delay:1];
 }
 
+
+/**
+*  do transition from intro layer to helloworld layers
+*/
 -(void) makeTransition:(ccTime)dt
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] withColor:ccWHITE]];
+    CCScene *scene = [CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] withColor:ccWHITE];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 @end

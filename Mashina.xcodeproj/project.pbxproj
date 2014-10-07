@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C9DC22AF26F556E0D12B546 /* BaseScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DCD63D10E632568E8A6FB /* BaseScene.mm */; };
+		3C9DC76C796EF27394B4D83A /* CCRayCast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DC76C4B11DE2D5E682FAE /* CCRayCast.mm */; };
+		3C9DC817C0793471329B5E8B /* CCTouchJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DCD485214B9ED7CD1C286 /* CCTouchJoint.mm */; };
+		3C9DCF62A08DF1A14DEEB2A5 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DC5386F1056600D75C7D8 /* HelloWorldLayer.mm */; };
+		3C9DCFCBCCA4A88D70ECFF23 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DC01E69B9DE364E9A6284 /* IntroLayer.mm */; };
+		7BCDD8DC170DC68200506110 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BCDD8DB170DC68200506110 /* Default-568h@2x.png */; };
 		7BD1034F16D10261004E56D3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD1034E16D10261004E56D3 /* QuartzCore.framework */; };
 		7BD1035116D10261004E56D3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD1035016D10261004E56D3 /* OpenGLES.framework */; };
 		7BD1035316D10261004E56D3 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD1035216D10261004E56D3 /* OpenAL.framework */; };
@@ -176,14 +182,27 @@
 		7BD1056416D10264004E56D3 /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1056316D10264004E56D3 /* b2Rope.cpp */; };
 		7BD1056A16D10264004E56D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1056916D10264004E56D3 /* main.m */; };
 		7BD1056D16D10264004E56D3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1056C16D10264004E56D3 /* AppDelegate.mm */; };
-		7BD1057016D10264004E56D3 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1056F16D10264004E56D3 /* HelloWorldLayer.mm */; };
-		7BD1057316D10264004E56D3 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1057216D10264004E56D3 /* IntroLayer.mm */; };
 		7BD1057616D10264004E56D3 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1057516D10264004E56D3 /* GLES-Render.mm */; };
 		7BD1057916D10264004E56D3 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1057816D10264004E56D3 /* PhysicsSprite.mm */; };
 		7BD1057B16D10264004E56D3 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BD1057A16D10264004E56D3 /* blocks.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C9DC01E69B9DE364E9A6284 /* IntroLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
+		3C9DC1A3AD8B289BE3C2D55F /* RaycastCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaycastCallback.h; sourceTree = "<group>"; };
+		3C9DC292643B225D6CDD2E81 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		3C9DC2B08E038141343C3524 /* QueryCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryCallback.h; sourceTree = "<group>"; };
+		3C9DC3115C46A2DA32DEC6DD /* IntroLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
+		3C9DC5386F1056600D75C7D8 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
+		3C9DC591FDFE5E476061147E /* Contants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contants.h; sourceTree = "<group>"; };
+		3C9DC76C4B11DE2D5E682FAE /* CCRayCast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCRayCast.mm; sourceTree = "<group>"; };
+		3C9DC8A96800146000C7FBB3 /* CCTouchJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTouchJoint.h; sourceTree = "<group>"; };
+		3C9DCCAED4811D1018C4CEBD /* CCRayCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRayCast.h; sourceTree = "<group>"; };
+		3C9DCD3CB0A1974A59483111 /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
+		3C9DCD485214B9ED7CD1C286 /* CCTouchJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCTouchJoint.mm; sourceTree = "<group>"; };
+		3C9DCD63D10E632568E8A6FB /* BaseScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseScene.mm; sourceTree = "<group>"; };
+		3C9DCFF4B566F3AB804B2C81 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
+		7BCDD8DB170DC68200506110 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7BD1034B16D10261004E56D3 /* Mashina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mashina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD1034E16D10261004E56D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7BD1035016D10261004E56D3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -536,10 +555,6 @@
 		7BD1056916D10264004E56D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BD1056B16D10264004E56D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7BD1056C16D10264004E56D3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		7BD1056E16D10264004E56D3 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		7BD1056F16D10264004E56D3 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
-		7BD1057116D10264004E56D3 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
-		7BD1057216D10264004E56D3 /* IntroLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
 		7BD1057416D10264004E56D3 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		7BD1057516D10264004E56D3 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		7BD1057716D10264004E56D3 /* PhysicsSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsSprite.h; sourceTree = "<group>"; };
@@ -567,9 +582,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C9DC7DB00A32BA5B46B9D33 /* SceneLayers */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DC3115C46A2DA32DEC6DD /* IntroLayer.h */,
+				3C9DC5386F1056600D75C7D8 /* HelloWorldLayer.mm */,
+				3C9DC292643B225D6CDD2E81 /* HelloWorldLayer.h */,
+				3C9DC01E69B9DE364E9A6284 /* IntroLayer.mm */,
+				3C9DCD63D10E632568E8A6FB /* BaseScene.mm */,
+				3C9DCD3CB0A1974A59483111 /* BaseScene.h */,
+			);
+			path = SceneLayers;
+			sourceTree = "<group>";
+		};
+		3C9DCB2239B2F2A96F5BCF83 /* Box2dHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DC591FDFE5E476061147E /* Contants.h */,
+				3C9DCCAED4811D1018C4CEBD /* CCRayCast.h */,
+				3C9DC76C4B11DE2D5E682FAE /* CCRayCast.mm */,
+				3C9DCFF4B566F3AB804B2C81 /* GLES-Render.h */,
+				3C9DC8A96800146000C7FBB3 /* CCTouchJoint.h */,
+				3C9DCD485214B9ED7CD1C286 /* CCTouchJoint.mm */,
+				3C9DC2B08E038141343C3524 /* QueryCallback.h */,
+				3C9DC1A3AD8B289BE3C2D55F /* RaycastCallback.h */,
+			);
+			path = Box2dHelpers;
+			sourceTree = "<group>";
+		};
+		3C9DCD097CDCD16C915A9288 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DCB2239B2F2A96F5BCF83 /* Box2dHelpers */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		3C9DCED2915B52FE7C184612 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DCD097CDCD16C915A9288 /* External */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		7BD1034216D10261004E56D3 = {
 			isa = PBXGroup;
 			children = (
+				7BCDD8DB170DC68200506110 /* Default-568h@2x.png */,
 				7BD1036016D10261004E56D3 /* Mashina */,
 				7BD1034D16D10261004E56D3 /* Frameworks */,
 				7BD1034C16D10261004E56D3 /* Products */,
@@ -605,10 +665,6 @@
 			children = (
 				7BD1056B16D10264004E56D3 /* AppDelegate.h */,
 				7BD1056C16D10264004E56D3 /* AppDelegate.mm */,
-				7BD1056E16D10264004E56D3 /* HelloWorldLayer.h */,
-				7BD1056F16D10264004E56D3 /* HelloWorldLayer.mm */,
-				7BD1057116D10264004E56D3 /* IntroLayer.h */,
-				7BD1057216D10264004E56D3 /* IntroLayer.mm */,
 				7BD1057416D10264004E56D3 /* GLES-Render.h */,
 				7BD1057516D10264004E56D3 /* GLES-Render.mm */,
 				7BD1057716D10264004E56D3 /* PhysicsSprite.h */,
@@ -616,6 +672,8 @@
 				7BD1036116D10262004E56D3 /* Resources */,
 				7BD1037B16D10262004E56D3 /* libs */,
 				7BD1056716D10264004E56D3 /* Supporting Files */,
+				3C9DC7DB00A32BA5B46B9D33 /* SceneLayers */,
+				3C9DCED2915B52FE7C184612 /* App */,
 			);
 			path = Mashina;
 			sourceTree = "<group>";
@@ -1206,6 +1264,7 @@
 				7BD1037A16D10262004E56D3 /* iTunesArtwork in Resources */,
 				7BD104B816D10263004E56D3 /* ChangeLog in Resources */,
 				7BD1057B16D10264004E56D3 /* blocks.png in Resources */,
+				7BCDD8DC170DC68200506110 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1363,10 +1422,13 @@
 				7BD1056416D10264004E56D3 /* b2Rope.cpp in Sources */,
 				7BD1056A16D10264004E56D3 /* main.m in Sources */,
 				7BD1056D16D10264004E56D3 /* AppDelegate.mm in Sources */,
-				7BD1057016D10264004E56D3 /* HelloWorldLayer.mm in Sources */,
-				7BD1057316D10264004E56D3 /* IntroLayer.mm in Sources */,
 				7BD1057616D10264004E56D3 /* GLES-Render.mm in Sources */,
 				7BD1057916D10264004E56D3 /* PhysicsSprite.mm in Sources */,
+				3C9DCF62A08DF1A14DEEB2A5 /* HelloWorldLayer.mm in Sources */,
+				3C9DCFCBCCA4A88D70ECFF23 /* IntroLayer.mm in Sources */,
+				3C9DC22AF26F556E0D12B546 /* BaseScene.mm in Sources */,
+				3C9DC76C796EF27394B4D83A /* CCRayCast.mm in Sources */,
+				3C9DC817C0793471329B5E8B /* CCTouchJoint.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1472,6 +1534,7 @@
 				7BD1058016D10264004E56D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
