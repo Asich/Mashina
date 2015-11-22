@@ -1489,6 +1489,7 @@
 				GCC_PREFIX_HEADER = Mashina/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Mashina/libs/kazmath/include\"";
 				INFOPLIST_FILE = Mashina/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
@@ -1508,6 +1509,7 @@
 				GCC_PREFIX_HEADER = Mashina/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Mashina/libs/kazmath/include\"";
 				INFOPLIST_FILE = Mashina/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
