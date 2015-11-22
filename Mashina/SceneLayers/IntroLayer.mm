@@ -10,6 +10,7 @@
 // Import the interfaces
 #import "IntroLayer.h"
 #import "HelloWorldLayer.h"
+#import "NewScene.h"
 
 
 #pragma mark - IntroLayer
@@ -51,7 +52,7 @@
 	}
 	background.position = ccp(size.width/2, size.height/2);
 
-	// add the label as a child to this Layer
+	// add the label as a child to this Layerk
 	[self addChild: background];
 	
 	// In one second transition to the new scene
@@ -62,9 +63,11 @@
 /**
 *  do transition from intro layer to helloworld layers
 */
--(void) makeTransition:(ccTime)dt
+-(void)makeTransition:(ccTime)dt
 {
-    CCScene *scene = [CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] withColor:ccWHITE];
+    id s = [HelloWorldLayer scene];
+//    id s = [NewScene scene];
+    CCScene *scene = [CCTransitionFade transitionWithDuration:1.0 scene:s withColor:ccWHITE];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 @end

@@ -36,28 +36,27 @@
 
 - (void)drawScreenBodyWithSize:(CGSize)winSize {
     b2BodyDef groundBodyDef;
-    groundBodyDef.position.Set(0,0);
-
-    _groundBody = _world->CreateBody(&groundBodyDef);
-
     b2EdgeShape groundBox;
-    b2FixtureDef groundBoxDef;
-    groundBoxDef.shape = &groundBox;
+    b2FixtureDef groundBoxFixtureDef;
+
+    groundBodyDef.position.Set(0,0);
+    _groundBody = _world->CreateBody(&groundBodyDef);
+    groundBoxFixtureDef.shape = &groundBox;
 
     //bottom
     groundBox.Set(b2Vec2(0,0), b2Vec2((float32) (winSize.width/PTM_RATIO), 0));
-    _groundBody->CreateFixture(&groundBoxDef);
+    _groundBody->CreateFixture(&groundBoxFixtureDef);
     //left
     groundBox.Set(b2Vec2(0,0), b2Vec2(0, (float32) (winSize.height/PTM_RATIO)));
-    _groundBody->CreateFixture(&groundBoxDef);
+    _groundBody->CreateFixture(&groundBoxFixtureDef);
     //roof
     groundBox.Set(b2Vec2(0, (float32) (winSize.height/PTM_RATIO)),
             b2Vec2((float32) (winSize.width/PTM_RATIO), (float32) (winSize.height/PTM_RATIO)));
-    _groundBody->CreateFixture(&groundBoxDef);
+    _groundBody->CreateFixture(&groundBoxFixtureDef);
     //right
     groundBox.Set(b2Vec2((float32) (winSize.width/PTM_RATIO), (float32) (winSize.height/PTM_RATIO)),
             b2Vec2((float32) (winSize.width/PTM_RATIO), 0));
-    _groundBody->CreateFixture(&groundBoxDef);
+    _groundBody->CreateFixture(&groundBoxFixtureDef);
 }
 
 #pragma mark -

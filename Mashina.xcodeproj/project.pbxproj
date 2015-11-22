@@ -10,6 +10,7 @@
 		3C9DC22AF26F556E0D12B546 /* BaseScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DCD63D10E632568E8A6FB /* BaseScene.mm */; };
 		3C9DC76C796EF27394B4D83A /* CCRayCast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DC76C4B11DE2D5E682FAE /* CCRayCast.mm */; };
 		3C9DC817C0793471329B5E8B /* CCTouchJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DCD485214B9ED7CD1C286 /* CCTouchJoint.mm */; };
+		3C9DCCC487052D77C897EEED /* NewScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DC863FEDF7541731B1F54 /* NewScene.mm */; };
 		3C9DCF62A08DF1A14DEEB2A5 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DC5386F1056600D75C7D8 /* HelloWorldLayer.mm */; };
 		3C9DCFCBCCA4A88D70ECFF23 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DC01E69B9DE364E9A6284 /* IntroLayer.mm */; };
 		7BCDD8DC170DC68200506110 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BCDD8DB170DC68200506110 /* Default-568h@2x.png */; };
@@ -196,12 +197,13 @@
 		3C9DC5386F1056600D75C7D8 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		3C9DC591FDFE5E476061147E /* Contants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contants.h; sourceTree = "<group>"; };
 		3C9DC76C4B11DE2D5E682FAE /* CCRayCast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCRayCast.mm; sourceTree = "<group>"; };
+		3C9DC863FEDF7541731B1F54 /* NewScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NewScene.mm; sourceTree = "<group>"; };
 		3C9DC8A96800146000C7FBB3 /* CCTouchJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTouchJoint.h; sourceTree = "<group>"; };
 		3C9DCCAED4811D1018C4CEBD /* CCRayCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRayCast.h; sourceTree = "<group>"; };
 		3C9DCD3CB0A1974A59483111 /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
 		3C9DCD485214B9ED7CD1C286 /* CCTouchJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCTouchJoint.mm; sourceTree = "<group>"; };
 		3C9DCD63D10E632568E8A6FB /* BaseScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseScene.mm; sourceTree = "<group>"; };
-		3C9DCFF4B566F3AB804B2C81 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
+		3C9DCE0A460C71300DCE6F5F /* NewScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewScene.h; sourceTree = "<group>"; };
 		7BCDD8DB170DC68200506110 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7BD1034B16D10261004E56D3 /* Mashina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mashina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD1034E16D10261004E56D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -591,6 +593,8 @@
 				3C9DC01E69B9DE364E9A6284 /* IntroLayer.mm */,
 				3C9DCD63D10E632568E8A6FB /* BaseScene.mm */,
 				3C9DCD3CB0A1974A59483111 /* BaseScene.h */,
+				3C9DC863FEDF7541731B1F54 /* NewScene.mm */,
+				3C9DCE0A460C71300DCE6F5F /* NewScene.h */,
 			);
 			path = SceneLayers;
 			sourceTree = "<group>";
@@ -601,7 +605,6 @@
 				3C9DC591FDFE5E476061147E /* Contants.h */,
 				3C9DCCAED4811D1018C4CEBD /* CCRayCast.h */,
 				3C9DC76C4B11DE2D5E682FAE /* CCRayCast.mm */,
-				3C9DCFF4B566F3AB804B2C81 /* GLES-Render.h */,
 				3C9DC8A96800146000C7FBB3 /* CCTouchJoint.h */,
 				3C9DCD485214B9ED7CD1C286 /* CCTouchJoint.mm */,
 				3C9DC2B08E038141343C3524 /* QueryCallback.h */,
@@ -1429,6 +1432,7 @@
 				3C9DC22AF26F556E0D12B546 /* BaseScene.mm in Sources */,
 				3C9DC76C796EF27394B4D83A /* CCRayCast.mm in Sources */,
 				3C9DC817C0793471329B5E8B /* CCTouchJoint.mm in Sources */,
+				3C9DCCC487052D77C897EEED /* NewScene.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

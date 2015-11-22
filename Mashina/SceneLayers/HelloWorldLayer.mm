@@ -45,13 +45,12 @@
 ////////Platform
     b2BodyDef platformBodyDef;
     platformBodyDef.type = b2_dynamicBody;
-    platformBodyDef.position.Set(130/PTM_RATIO, 100/PTM_RATIO);
+    platformBodyDef.position.Set(ptm(130), ptm(100));
 
     _platformBody = _world->CreateBody(&platformBodyDef);
 
     b2PolygonShape platformShape;
-    platformShape.SetAsBox(100/PTM_RATIO/2,
-                               15/PTM_RATIO/2);
+    platformShape.SetAsBox(ptm(100)/2, ptm(15)/2);
 
 
     b2FixtureDef platformFixtureDef;
@@ -66,12 +65,12 @@
     b2Body *_wheelOneBody;
     b2BodyDef wheelOneBodyDef;
     wheelOneBodyDef.type = b2_dynamicBody;
-    wheelOneBodyDef.position.Set(60/PTM_RATIO, 100/PTM_RATIO);
+    wheelOneBodyDef.position.Set(ptm(60), ptm(100));
 
     _wheelOneBody = _world->CreateBody(&wheelOneBodyDef);
 
     b2CircleShape circleWheelOne;
-    circleWheelOne.m_radius = 25.0/PTM_RATIO;
+    circleWheelOne.m_radius = ptm(25.0);
 
 
     b2FixtureDef wheelOneShapeDef;
@@ -85,13 +84,13 @@
     b2Body *_wheelTwoBody;
     b2BodyDef wheelTwoBodyDef;
     wheelTwoBodyDef.type = b2_dynamicBody;
-    wheelTwoBodyDef.position.Set(200/PTM_RATIO, 100/PTM_RATIO);
+    wheelTwoBodyDef.position.Set(ptm(200), ptm(100));
     //wheelTwoBodyDef.userData = wheelTwoSprite;
 
     _wheelTwoBody = _world->CreateBody(&wheelTwoBodyDef);
 
     b2CircleShape circleWheelTwo;
-    circleWheelTwo.m_radius = 25.0/PTM_RATIO;
+    circleWheelTwo.m_radius = ptm(25.0);
 
     b2FixtureDef wheelTwoShapeDef;
     wheelTwoShapeDef.shape = &circleWheelTwo;
@@ -103,7 +102,7 @@
 
 /////////Revolute joint1
     b2RevoluteJointDef wheelOneJointDef;
-    wheelOneJointDef.Initialize(_platformBody, _wheelOneBody, b2Vec2(60/PTM_RATIO, 100/PTM_RATIO));
+    wheelOneJointDef.Initialize(_platformBody, _wheelOneBody, b2Vec2(ptm(60), ptm(100)));
     _world->CreateJoint(&wheelOneJointDef);
 
 //wheelOneJointDef.enableMotor = true;
@@ -113,11 +112,9 @@
 //wheelOneJointDef.upperAngle  = CC_DEGREES_TO_RADIANS(90);
 //wheelOneJointDef.maxMotorTorque = 70000;//4800;
 
-
-
     /////Revolute joint2
     b2RevoluteJointDef wheelTwoJointDef;
-    wheelTwoJointDef.Initialize(_platformBody, _wheelTwoBody, b2Vec2(200/PTM_RATIO, 100/PTM_RATIO));
+    wheelTwoJointDef.Initialize(_platformBody, _wheelTwoBody, b2Vec2(ptm(200), ptm(100)));
     _world->CreateJoint(&wheelTwoJointDef);
 
 //    b2Vec2 force = b2Vec2(1000, 0);
