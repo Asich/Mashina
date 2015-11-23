@@ -3,10 +3,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseScene.h"
+#import "BaseLayer.h"
 
 
-@interface NewScene : BaseScene
+@interface NewScene : BaseLayer
 
 + (id)scene;
 

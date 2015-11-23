@@ -2,13 +2,13 @@
 // Created by Mustafin Askar on 07/10/2014.
 //
 
-#import "BaseScene.h"
+#import "BaseLayer.h"
 #import "HelloWorldLayer.h"
 #import "Contants.h"
 #import "CCTouchJoint.h"
 
 
-@implementation BaseScene {
+@implementation BaseLayer {
 }
 
 - (id)init {

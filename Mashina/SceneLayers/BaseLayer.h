@@ -8,7 +8,7 @@
 #import "GLES-Render.h"
 
 
-@interface BaseScene : CCLayer {
+@interface BaseLayer : CCLayer {
     b2World *_world;
     GLESDebugDraw *m_debugDraw;
 
