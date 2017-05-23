@@ -100,6 +100,11 @@
     wheelTwoShapeDef.friction = 0.99f;
     _wheelTwoBody->CreateFixture(&wheelTwoShapeDef);
 
+    const b2Vec2 impulse = b2Vec2(0, 3);
+    const b2Vec2 point = b2Vec2(0, 8);
+    
+    _wheelOneBody->ApplyLinearImpulse(impulse, point);
+
 
 /////////Revolute joint1
     b2RevoluteJointDef wheelOneJointDef;
@@ -120,6 +125,8 @@
 
 //    b2Vec2 force = b2Vec2(1000, 0);
 //    _platformBody->ApplyTorque(100);
+    
+    
 }
 
 

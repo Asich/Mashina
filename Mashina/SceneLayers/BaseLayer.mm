@@ -98,8 +98,7 @@
 #pragma mark -
 #pragma mark CCTargetedTouch Delegate Methods
 
-- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     NSSet *allTouches = [event allTouches];
 
     for(UITouch *touch in allTouches)
@@ -186,8 +185,7 @@
     [touchJointList removeObjectsInArray:discardedItems];
 }
 
-- (void)ccTouchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)ccTouchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     [touchJointList removeAllObjects];
 }
 
@@ -200,6 +198,5 @@
     [touchJointList release];
     [super dealloc];
 }
-
 
 @end

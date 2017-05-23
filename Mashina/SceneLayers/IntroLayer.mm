@@ -9,8 +9,10 @@
 
 // Import the interfaces
 #import "IntroLayer.h"
-#import "HelloWorldLayer.h"
+//#import "HelloWorldLayer.h"
 #import "NewScene.h"
+#import "TestRotationLayer.h"
+#import "HelloWorldLayer.h"
 
 
 #pragma mark - IntroLayer
@@ -67,6 +69,7 @@
 {
     id s = [HelloWorldLayer scene];
 //    id s = [NewScene scene];
+	//id s = [TestRotationLayer scene];
     CCScene *scene = [CCTransitionFade transitionWithDuration:1.0 scene:s withColor:ccWHITE];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
